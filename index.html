@@ -1,63 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./main.css" />
-  </head>
-  <body>
-    <div class="player">
-      <div class="dashboard">
-        <header>
-          <h4>Now playing:</h4>
-          <h2>Nevada 57th & 9th</h2>
-        </header>
-        <div class="cd">
-          <div
-            class="cd-thumb"
-            style="
-              background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg');
-            "
-          ></div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuabike</title>
+    <!--Box icon-->
+    <link rel="stylesheet" href="./boxicons-2.0.7/css/boxicons.min.css">
+    <!--App css-->
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./app.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <!--mobile-menu-->
+        <div class="mobile-menu bg-second">
+            <a href="#" class="logo">
+                <img src="./img/TuaBike.png" alt="">
+            </a>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class="bx bx-menu"></i>
+            </span>
         </div>
-        <div class="control">
-          <div class="btn btn-repeat">
-            <i class="fas fa-redo"></i>
-          </div>
-          <div class="btn btn-prev">
-            <i class="fas fa-step-backward"></i>
-          </div>
-          <div class="btn btn-toggle-play">
-            <i class="fas fa-pause icon-pause"></i>
-            <i class="fas fa-play icon-play"></i>
-          </div>
-          <div class="btn btn-next">
-            <i class="fas fa-step-forward"></i>
-          </div>
-          <div class="btn btn-random">
-            <i class="fas fa-random"></i>
-          </div>
+        <div class="header" id="header">
+            <div class="mobile-menu bg-second">
+                <a href="#" class="logo">
+                    <img src="./img/TuaBike.png" alt="">
+                </a>
+                <span class="mb-menu-close" id="mb-menu-close">
+                    <i class="bx bx-x"></i>
+                </span>
+            </div>
+            <div class="main-menu-wrap">
+                <ul class="main-menu">
+                    <li><a href="#" class = "active">home</a></li>
+                    <li><a href="#">shop</a></li>
+                    <li><a href="#">Dealer</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <ul class="user-menu">
+                <li><a href="#"><i class="bx bx-shopping-bag"></i></a></li>
+                <li><a href="#"><i class="bx bx-user"></i></a></li>
+                <li><a href="#"><i class="bx bx-search"></i></a></li>
+            </ul>
         </div>
-        <input
-          id="progress"
-          class="progress"
-          type="range"
-          value="0"
-          step="1"
-          min="0"
-          max="100"
-        />
+    </header>
+    <!--hero slide-->
+    <div class="hero">
+        <div class="slide-container" id = "hero-slide">
+            <div class="slide ">
+                <div class="slide-txt">
+                    <div class="slide-title">
+                        <h3>polygon siskiu</h3>
+                    </div>
+                    <div class="slide-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru
+                        </p>
+                    </div>
+                    <div class="slide-btn">
+                        <a href="#" class="hero-btn">
+                            buy now
+                        </a>
+                    </div>
+                </div>
+                <div class="slide-img">
+                    <img src="./img/MTBROMO_N7_2022.png" alt="">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-txt">
+                    <div class="slide-title">
+                        <h3>mt bromo n7</h3>
+                    </div>
+                    <div class="slide-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru
+                        </p>
+                    </div>
+                    <div class="slide-btn">
+                        <a href="#" class="hero-btn">
+                            buy now
+                        </a>
+                    </div>
+                </div>
+                <div class="slide-img">
+                    <img src="./img/6489548.png" alt="">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-txt">
+                    <div class="slide-title">
+                        <h3>cascade mount</h3>
+                    </div>
+                    <div class="slide-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru
+                        </p>
+                    </div>
+                    <div class="slide-btn">
+                        <a href="#" class="hero-btn">
+                            buy now
+                        </a>
+                    </div>
+                </div>
+                <div class="slide-img">
+                    <img src="./img/b1.png" alt="">
+                </div>
+            </div>
+            <div class="hero-txt">
+                you ride
+            </div>
 
-        <audio id="audio" src=""></audio>
-      </div>
-      <div class="playlist"></div>
+            <div class="slide-control">
+                <li class="slide-prev"><i class="bx bx-chevron-left"></i></li>
+                <li class="slide-control-item ">01</li>
+                <li class="slide-control-item ">02</li>
+                <li class="slide-control-item ">03</li>
+                <li class="slide-next"><i class="bx bx-chevron-right"></i></li>
+            </div>
+        </div>
     </div>
-    <script src="./main.js"></script>
-  </body>
+    <!--end hero slide-->
+
+    <!--category section-->
+    <div class="section">
+        <div class="section-title">
+            <h3 class="second-title to-right show-on-scroll ">bike category</h3>
+            <h3 class="main-title to-left show-on-scroll ">choose your style</h3>
+        </div>
+        <div class="section-content">
+            <div class="row">
+                <div class="col-4 col-sm-12">
+                    <div class="category-img to-top show-on-scroll ">
+                        <div class="category-img-inner" style="background-image: url(./img/alvan-nee-EHILKZNmTuA-unsplash.jpg)"></div>
+                        <div class="category-title">
+                            Urban
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-12">
+                    <div class="category-img to-top show-on-scroll ">
+                        <div class="category-img-inner" style="background-image: url(./img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash.jpg)"></div>
+                        <div class="category-title">
+                            Mountain
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-12">
+                    <div class="category-img to-top show-on-scroll ">
+                        <div class="category-img-inner" style= "background-image: url(./img/tom-austin-3L76b-LMyeI-unsplash.jpg)"></div>
+                        <div class="category-title">
+                            Road
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--end category section-->
+
+    <!--new arrivals section-->
+    <div class="section">
+        <div class="section-title">
+            <h3 class="second-title to-right show-on-scroll ">new bikes</h3>
+            <h3 class="main-title to-left show-on-scroll ">new arrivals</h3>
+            <div href="#" class="btn-wrapper">
+                <div class="to-right show-on-scroll ">
+                    <a href="#" class="btn">view all bikes</a>
+                </div>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="row flex-mb-arivals">
+                <div class="col-5 col-center product-cart-mb">
+                    <div class="to-right show-on-scroll ">
+                        <div class="product-cart product-cart-large">
+                            <a href="#">
+                                <div class="product-cart-img">
+                                    <img src="./img/Polygon Cascade.png" alt="">
+                                </div>
+                                <h3 class="product-cart-name">
+                                    polygon cascade
+                                </h3>
+                                <span class="product-cart-price">
+                                    $3,900.00
+                                </span>
+                            </a>
+                            <button class="btn">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 col-center">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="to-top show-on-scroll ">
+                                <div class="product-cart">
+                                    <a href="#">
+                                        <div class="product-cart-img">
+                                            <img src="./img/b2.png" alt="">
+                                        </div>
+                                        <h3 class="product-cart-name">
+                                            norco youth bicycle
+                                        </h3>
+                                        <span class="product-cart-price">
+                                            $3,900.00
+                                        </span>
+                                    </a>
+                                    <button class="btn">add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="to-top show-on-scroll ">
+                                <div class="product-cart">
+                                    <a href="#">
+                                        <div class="product-cart-img">
+                                            <img src="./img/MTBROMO_N7_2022.png" alt="">
+                                        </div>
+                                        <h3 class="product-cart-name">
+                                            mt bromo n7
+                                        </h3>
+                                        <span class="product-cart-price">
+                                            $3,900.00
+                                        </span>
+                                    </a>
+                                    <button class="btn">add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="to-top show-on-scroll ">
+                                <div class="product-cart">
+                                    <a href="#">
+                                        <div class="product-cart-img">
+                                            <img src="./img/b1.png" alt="">
+                                        </div>
+                                        <h3 class="product-cart-name">
+                                            haibike xduro rx
+                                        </h3>
+                                        <span class="product-cart-price">
+                                            $3,900.00
+                                        </span>
+                                    </a>
+                                    <button class="btn">add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="to-top show-on-scroll ">
+                                <div class="product-cart">
+                                    <a href="#">
+                                        <div class="product-cart-img">
+                                            <img src="./img/531352.png" alt="">
+                                        </div>
+                                        <h3 class="product-cart-name">
+                                            polygon sisku
+                                        </h3>
+                                        <span class="product-cart-price">
+                                            $3,900.00
+                                        </span>
+                                    </a>
+                                    <button class="btn">add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!--end new arrivals section-->
+
+    <!--special bike-->
+    <div class="section special-section">
+        <div class="section-title">
+            <h3 class="second-title to-left show-on-scroll ">
+                best seller
+            </h3>
+            <h3 class="main-title to-right show-on-scroll ">
+                xtrada hardtail
+            </h3>
+            <div class="special-price to-top show-on-scroll ">
+                $1,099.00
+            </div>
+            <div class="to-top show-on-scroll ">
+                <a href="#" class="btn">buy now</a>
+            </div>
+        </div>
+        <div class="special-img">
+            <img src="./img/6489548.png" alt="" class="to-left show-on-scroll ">
+        </div>
+    </div>
+    <!--end special bike--> 
+
+    <div class="section">
+        <div class="section-title">
+            <h3 class="second-title to-right show-on-scroll second-title-custon">customer choice</h3>
+            <h3 class="main-title to-left show-on-scroll ">popular bikes</h3>
+            <div href="#" class="btn-wrapper">
+                <div class="to-top show-on-scroll ">
+                    <a href="#" class="btn">view all bikes</a>
+                </div>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="row" id = "latest-products"></div>
+        </div>
+    </div>
+
+    <!--news section -->
+    <div class="section">
+        <div class="section-title">
+            <h3 class="second-title to-right show-on-scroll ">bike news</h3>
+            <h3 class="main-title to-left show-on-scroll ">latest news</h3>
+            <div href="#" class="btn-wrapper">
+                <div class="to-top show-on-scroll ">
+                    <a href="#" class="btn">view all news</a>
+                </div>              
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="row">
+                <div class="col-4 to-top show-on-scroll ">
+                    <div class="news-card">
+                        <a href="#" class="news-card-img">
+                            <div class="img-wrapper">
+                                <div class="img" style="background-image: url(./img/portuguese-gravity-MLbsn2aQfQs-unsplash.jpg);"></div>
+                            </div>
+                        </a>
+                        <h3 class="news-title">
+                            <a href="#">  
+                                Cycling On Your Period: Harness The Power Of Your Hormones
+                            </a>
+                        </h3>
+                        <p class="news-preview">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Voluptas exercitationem reprehenderit assumenda similique debitis consequuntur aliquid eum temporibus tempora, 
+                            error qui in iusto ducimus expedita earum aspernatur dignissimos, porro dolores!
+                        </p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+                <div class="col-4 to-top show-on-scroll ">
+                    <div class="news-card">
+                        <a href="#" class="news-card-img">
+                            <div class="img-wrapper">
+                                <div class="img" style="background-image: url(./img/asoggetti-HPpj2190tGs-unsplash.jpg);"></div>
+                            </div>
+                        </a>
+                        <h3 class="news-title">
+                            <a href="#">  
+                                Cycling On Your Period: Harness The Power Of Your Hormones
+                            </a>
+                        </h3>
+                        <p class="news-preview">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Voluptas exercitationem reprehenderit assumenda similique debitis consequuntur aliquid eum temporibus tempora, 
+                            error qui in iusto ducimus expedita earum aspernatur dignissimos, porro dolores!
+                        </p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+                <div class="col-4 to-top show-on-scroll ">
+                    <div class="news-card">
+                        <a href="#" class="news-card-img">
+                            <div class="img-wrapper">
+                                <div class="img" style="background-image: url(./img/paolo-chiabrando-KSwd2lb3lfs-unsplash.jpg);"></div>
+                            </div>
+                        </a>
+                        <h3 class="news-title">
+                            <a href="#">  
+                                Cycling On Your Period: Harness The Power Of Your Hormones
+                            </a>
+                        </h3>
+                        <p class="news-preview">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Voluptas exercitationem reprehenderit assumenda similique debitis consequuntur aliquid eum temporibus tempora, 
+                            error qui in iusto ducimus expedita earum aspernatur dignissimos, porro dolores!
+                        </p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--end news section -->
+
+    <footer>
+        <div class="section-content">
+            <div class="row">
+                <div class="col-4">
+                    <a href="#" class="logo footer-loggo-mb">
+                        <img src="./img/TuaBike.png" alt="">
+                    </a>
+                    <p class="footer-description">
+                        <p class="footer-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, consequuntur obcaecati. Debitis sed velit, aliquid nihil, omnis illo dignissimos, quod vitae repellat quo nam quas similique cum molestias et fugiat.
+                        </p>
+                    </p>
+                    <ul class="socials">
+                        <li><a href="#"><i class= "bx bxl-facebook-circle"></i></a></li>
+                        <li><a href="#"><i class= "bx bxl-twitter"></i></a></li>
+                        <li><a href="#"><i class= "bx bxl-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="footer-menu">
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">service</a></li>
+                        <li><a href="#">product</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="footer-menu">
+                        <li><a href="#">gallery</a></li>
+                        <li><a href="#">gears</a></li>
+                        <li><a href="#">faq</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h3 class="footer-header">
+                        news letter
+                    </h3>
+                    <p class="footer-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quibusdam enim quaerat natus sit beatae. Corrupti error explicabo commodi beatae non. Aut ipsam nemo quibusdam quia molestias, non maiores reprehenderit.     
+                    </p>
+                    <div class="subscribe-form">
+                        <input type="text" name="" placeholder="Your Email...">
+                        <button class="btn">subscribe now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./app.js"></script>
+</body>
 </html>
